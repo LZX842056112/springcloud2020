@@ -15,17 +15,15 @@ spring:
       label: master
   # rabbitmq相关配置
   rabbitmq:
-    host: 192.168.8.157
+    addresses: 192.168.8.157
     port: 5672
     username: guest
     password: guest
-  devtools:
-    add-properties: false
 #服务注册到eureka地址
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+      defaultZone: http://eureka7001.com:7001/eureka
 # rabbitmq相关配置，暴露bus刷新配置的端点
 management:
   endpoints: # 暴露bus刷新配置的端点
